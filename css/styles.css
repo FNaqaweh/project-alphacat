@@ -1,0 +1,23 @@
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	font-family: sans-serif;
+	font-weight: 400;
+}
+
+.content {
+	height: 200vh;
+	display: grid;
+}
+
+.home-content {
+	margin-top: 80px;
+	height: 500px;
+	position: relative;
+}
+
+

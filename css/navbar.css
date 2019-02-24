@@ -1,27 +1,8 @@
 
 :root {
 	--background: rgba(9, 63, 150, .90);
+	--highlighted: rgb(212,175,55);
 }
-
-*, *::before, *::after {
-	box-sizing: border-box;
-}
-
-body {
-	margin: 0px;
-	font-family: sans-serif;
-	font-weight: 400;
-}
-
-.content {
-	height: 200vh;
-	display: grid;
-}
-
-.home-content {
-	margin-top: 100px;
-}
-
 
 /* Navigation bar styling */
 header {
@@ -112,7 +93,7 @@ nav a {
 }
 
 nav a:hover {
-	color: black;
+	color: var(--highlighted);
 }
 
 .nav-toggle:checked ~ nav {
@@ -166,7 +147,7 @@ nav a:hover {
 		content: '';
 		display: block;
 		height: 2px;
-		background: white;
+		background: var(--highlighted);
 		border-radius: 2px;
 		margin-bottom: 2px;
 		position: absolute;
@@ -175,10 +156,11 @@ nav a:hover {
 		right: 0;
 		transform: scale(0,1);
 		transition: transform ease-in-out 250ms;
+		transform-origin: left;
 	}
 
 	nav a:hover {
-		color: white;
+		color: var(--highlighted);
 	}
 
 	nav a:hover::before {
