@@ -77,6 +77,8 @@ nav {
 	top: 100%;
 	left: 0;
 	transform: scale(1,0);
+	transition: transform 400ms ease-in-out;
+	transform-origin: top;
 }
 
 nav ul {
@@ -94,6 +96,8 @@ nav a {
 	color: white;
 	text-decoration: none; /* seems to be the style defaulted to links */
 	text-transform: uppercase;
+	opacity: 0;
+	transition: opacity 100ms ease-in-out;
 }
 
 nav a:hover {
@@ -102,4 +106,22 @@ nav a:hover {
 
 .nav-toggle:checked ~ nav {
 	transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a {
+	opacity: 1;
+	transition: opacity 250ms ease-in-out 250ms;
+}
+
+@media screen and (min-width: 800px) {
+	
+	.nav-toggle-label {
+		display: none;
+	}
+
+	header {
+		display: grid;
+		grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
+	}
+
 }
