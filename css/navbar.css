@@ -1,6 +1,7 @@
 
+/* --background: rgba(0, 5, 105, 1); */
 :root {
-	--background: rgba(9, 63, 150, .90);
+	--background: rgba(18, 21, 90, 1);
 	--highlighted: rgb(212,175,55);
 }
 
@@ -13,9 +14,23 @@ header {
 	width: 100%;
 }
 
-header h1 {
+header a {
+	text-decoration: none;
+}
+header a h1 {
+	font-weight: 500;
+	border: 2px solid white;
+	padding: 5px;
+	padding-right: 20px;
+	padding-left: 20px;
 	color: white;
 }
+
+header a h1:hover {
+	color: var(--highlighted);
+	border-color: var(--highlighted);
+}
+
 
 .nav-toggle {
 	display: none;
@@ -30,10 +45,6 @@ header h1 {
 	height: 100%;
 	display: flex;
 	align-items: center;
-}
-
-.nav-toggle-label:hover {
-	color: black;
 }
 
 .nav-toggle-label span,

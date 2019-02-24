@@ -7,17 +7,54 @@ body {
 	margin: 0px;
 	font-family: sans-serif;
 	font-weight: 400;
-}
-
-.content {
-	height: 200vh;
 	display: grid;
 }
 
-.home-content {
-	margin-top: 80px;
-	height: 500px;
-	position: relative;
+main {
+	margin-top: 100px;
 }
 
+body .home-intro {
+	display: grid;
+	grid-template-columns: 200px auto 200px;
+}
 
+.home-intro h1 {
+	grid-column: 2 / 3;
+	text-align: center;
+	font-weight: 400;
+	font-size: 60px;
+	margin-bottom: 15px;
+}
+
+.home-intro .profile-pic {
+	grid-column: 2 / 3;
+	text-align: center;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.home-intro p {
+	grid-column: 2 / 3;
+	text-align: center;
+}
+
+.profile-pic {
+	width: 300px;
+	height: auto;
+	border-radius: 150px;
+}
+
+.left-half {
+	grid-column: 2 / 3;
+	text-align: center;
+	
+}
+
+.right-half {
+	grid-column: 3 / 4;
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
