@@ -2,6 +2,7 @@
 <html lang="en">
 
 	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta charset="utf-8">
 		<meta name="description" content="Project Alphacat: Faisal Naqaweh's personal website">
 		<title>Project Alphacat: Faisal</title>
@@ -9,17 +10,19 @@
 
 	<body>
 		<header>
-			<img src=""> <!-- Personal logo goes here -->
+			<h1 class="logo">FN</h1>
+			<input type="checkbox" id="nav-toggle" class="nav-toggle">
 			<nav>		 <!-- Website navigation section -->
-				<a href="">Projects</a>
-				<a href="">Experience</a>
-				<a href="">Personal Interests</a>
-				<a href="">Contact Me</a>
+				<ul>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Experience</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Resum&eacute;</a></li>
+				</ul>
 			</nav>
-			<div>		 <!-- Links to Resume downloade and LinkedIn -->
-				<a href="">Resum&eacute;</a> <!-- Within a button -->
-				<a href="">LinkedIn</a>		 <!-- Clickable LinkedIn icon (image) -->
-			</div>
+			<label for="nav-toggle" class="nav-toggle-label">
+				<span></span>
+			</label>
 		</header>
 
 		<main>
