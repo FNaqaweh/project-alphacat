@@ -5,6 +5,7 @@
 
 body {
 	margin: 0px;
+	background-image: url(../images/folk-pattern.png);
 	font-family: sans-serif;
 	font-weight: 400;
 	display: grid;
@@ -33,11 +34,6 @@ body .home-intro {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
-}
-
-.home-intro p {
-	grid-column: 2 / 3;
-	text-align: center;
 }
 
 .profile-pic {
