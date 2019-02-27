@@ -1,3 +1,8 @@
+:root {
+	--background: rgba(18, 21, 90, 1);
+	--highlighted: rgb(212,175,55);
+}
+
 
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -13,33 +18,45 @@ body {
 
 main {
 	margin-top: 100px;
-}
-
-body .home-intro {
 	display: grid;
-	grid-template-columns: 200px auto 200px;
+	grid-template-rows: 50px auto 100px;
+	grid-template-columns: 1fr minmax(300px, 2fr) 1fr;
 }
 
-.home-intro h1 {
+.home-tile {
+	display: grid;
+	grid-row: 2 / 3;
 	grid-column: 2 / 3;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 20px 100px 550px auto;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+	border: 1px solid #dcddde;
+}
+
+.home-tile h1 {
+	font-family: 'Lobster';
 	text-align: center;
 	font-weight: 400;
-	font-size: 60px;
-	margin-bottom: 15px;
+	font-size: 80px;
+	grid-column: 1 / 4;
+	grid-row: 2 / 3;
+
 }
 
-.home-intro .profile-pic {
+.home-tile .profile-pic {
 	grid-column: 2 / 3;
-	text-align: center;
+	grid-row: 3 / 4;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
 }
 
 .profile-pic {
-	width: 300px;
+	width: 100%;
 	height: auto;
-	border-radius: 150px;
+	border-radius: 300px;
 }
 
 .left-half {
