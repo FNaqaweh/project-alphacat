@@ -37,7 +37,7 @@ header a h1:hover {
 	border-color: var(--highlighted);
 }
 
-.logo h1 {
+.logo {
 	font-family: 'Lobster';
 }
 
