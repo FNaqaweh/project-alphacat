@@ -3,7 +3,7 @@
 	--highlighted: rgb(212,175,55);
 }
 
-h1.full-name {
+main h1 {
 	color: white;
 	grid-column: 1 / -1;
 	text-align: center;
@@ -15,7 +15,7 @@ h1.full-name {
 }
 
 @media screen and (max-width: 599px) {
-	h1.full-name {
+	main h1 {
 		font-size: 60px;
 	}
 }
