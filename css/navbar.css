@@ -1,13 +1,14 @@
 
 /* --background: rgba(0, 5, 105, 1); */
 :root {
-	--background: rgba(18, 21, 90, 0.97);
+	--primary: rgba(18, 21, 90, 1);
+	--white: rgba(255,255,255,0.95);
 	--highlighted: rgb(212,175,55);
 }
 
 /* Navigation bar styling */
 header {
-	background: var(--background);
+	background: var(--white);
 	text-align: center;
 	position: fixed;
 	z-index: 999;
@@ -15,15 +16,20 @@ header {
 }
 
 header a {
+	color: var(--primary);
 	text-decoration: none;
 }
-header a h1 {
+
+header h1 {
 	font-weight: 500;
-	border: 2px solid white;
+	border: 2px solid var(--primary);
+	margin-left: auto;
+	margin-right: auto;
 	padding: 5px;
 	padding-right: 20px;
 	padding-left: 20px;
-	color: white;
+	width: 100px;
+	color: var(--primary);
 }
 
 header a h1:hover {
@@ -31,6 +37,9 @@ header a h1:hover {
 	border-color: var(--highlighted);
 }
 
+.logo h1 {
+	font-family: 'Lobster';
+}
 
 .nav-toggle {
 	display: none;
@@ -38,7 +47,7 @@ header a h1:hover {
 
 .nav-toggle-label {
 	position: absolute;
-	color: white;
+	color: var(--primary);
 	top: 0;
 	left: 0;
 	margin-left: 1em;
@@ -51,7 +60,7 @@ header a h1:hover {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
 	display: block;
-	background: white;
+	background: var(--primary);
 	height: 2px;
 	width: 2em;
 	border-radius: 2px;
@@ -75,7 +84,7 @@ header a h1:hover {
 
 nav {
 	position: absolute;
-	background: var(--background);
+	background: var(--white);
 	width: 100%;
 	text-align: left;
 	top: 100%;
@@ -97,7 +106,7 @@ nav li {
 }
 
 nav a {
-	color: white;
+	color: var(--primary);
 	text-decoration: none; /* seems to be the style defaulted to links */
 	text-transform: uppercase;
 	opacity: 0;
@@ -153,6 +162,7 @@ nav a:hover {
 	nav a {
 		opacity: 1;
 		position: relative;
+		color: var(--background);
 	}
 
 	nav a::before {

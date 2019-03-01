@@ -8,66 +8,29 @@
 	box-sizing: border-box;
 }
 
+
 body {
-	margin: 0px;
-	background-image: url(../images/folk-pattern.png);
-	font-family: sans-serif;
-	font-weight: 400;
 	display: grid;
+	background-color: var(--background); 
+	margin: 0px;
+	font-family: sans-serif;
+	font-weight: 400;	
 }
 
 main {
 	margin-top: 100px;
-	display: grid;
-	grid-template-rows: 50px auto 100px;
-	grid-template-columns: 1fr minmax(300px, 2fr) 1fr;
 }
 
-.home-tile {
-	display: grid;
-	grid-row: 2 / 3;
-	grid-column: 2 / 3;
-	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-rows: 20px 100px 550px auto;
-	align-items: center;
-	background-color: rgba(255, 255, 255, 0.8);
-	border-radius: 10px;
-	border: 1px solid #dcddde;
-}
-
-.home-tile h1 {
-	font-family: 'Lobster';
-	text-align: center;
-	font-weight: 400;
-	font-size: 80px;
-	grid-column: 1 / 4;
-	grid-row: 2 / 3;
-
-}
-
-.home-tile .profile-pic {
-	grid-column: 2 / 3;
-	grid-row: 3 / 4;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.profile-pic {
+.inner-content {
+	max-width: 1080px;
+	padding-left: 20px;
+	padding-right: 20px;
 	width: 100%;
-	height: auto;
-	border-radius: 300px;
+	margin: 0 auto;
 }
 
-.left-half {
-	grid-column: 2 / 3;
-	text-align: center;
-	
-}
-
-.right-half {
-	grid-column: 3 / 4;
-	display: flex;
-	height: 100%;
-	align-items: center;
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	justify-content: center;
 }
