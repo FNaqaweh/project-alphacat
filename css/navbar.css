@@ -1,12 +1,4 @@
 
-/* --background: rgba(0, 5, 105, 1); */
-:root {
-	/*--primary: rgba(18, 21, 90, 1);*/
-	--primary: #1e2134;
-	--white: rgba(255,255,255,0.85);
-	--highlighted: rgb(212,175,55);
-}
-
 /* Navigation bar styling */
 header {
 	background: var(--white);
