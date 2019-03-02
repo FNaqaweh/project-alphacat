@@ -1,8 +1,9 @@
 
 /* --background: rgba(0, 5, 105, 1); */
 :root {
-	--primary: rgba(18, 21, 90, 1);
-	--white: rgba(255,255,255,0.95);
+	/*--primary: rgba(18, 21, 90, 1);*/
+	--primary: #1e2134;
+	--white: rgba(255,255,255,0.85);
 	--highlighted: rgb(212,175,55);
 }
 
@@ -32,7 +33,7 @@ header h1 {
 	color: var(--primary);
 }
 
-header a h1:hover {
+h1.logo:hover, h1.logo:hover a {
 	color: var(--highlighted);
 	border-color: var(--highlighted);
 }
@@ -162,7 +163,7 @@ nav a:hover {
 	nav a {
 		opacity: 1;
 		position: relative;
-		color: var(--background);
+		color: var(--primary);
 	}
 
 	nav a::before {
