@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,600");
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
 :root {
 	--primary: #1e2134;
 	--white: rgba(255, 255, 255, 0.85);
@@ -16,20 +20,29 @@ body {
 	background-image: url("../images/polygon_backgrounds/12.jpg");
 	background-repeat: no-repeat;
 	margin: 0px;
-	font-family: sans-serif;
-	font-weight: 400;
+	font-family: "Work Sans", sans-serif;
+	font-weight: 300;
 }
 
 main {
 	margin-top: 100px;
 }
 
-.inner-content {
+strong {
+	font-weight: 600;
+}
+
+.page-content {
+	display: none;
 	max-width: 1080px;
 	padding-left: 20px;
 	padding-right: 20px;
 	width: 100%;
 	margin: 0 auto;
+}
+
+.active {
+	display: block;
 }
 
 .wrapper {

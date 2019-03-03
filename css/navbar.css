@@ -138,6 +138,7 @@ nav a:hover {
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
+		font-size: 18px;
 	}
 
 	nav ul {

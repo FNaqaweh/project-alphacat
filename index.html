@@ -2,10 +2,6 @@
 <html lang="en">
 
 	<head>
-		<!-- Google fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
-
 		<!-- Font Awesome icons -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./images/microchip-solid.svg">
@@ -13,8 +9,7 @@
 		<!-- Associated CSS files -->
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="stylesheet" type="text/css" href="css/navbar.css">
-		<link rel="stylesheet" type="text/css" href="css/home.css">
-		<link rel="stylesheet" type="text/css" href="css/about.css">
+		<link rel="stylesheet" type="text/css" href="css/page-content.css">
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,14 +19,14 @@
 
 	<body>
 		<header>
-			<h1 class="logo"><a href="./index.html">FN</a></h1>
+			<h1 class="logo"><a href="./index.html" data-target="home-page" class="nav-link">FN</a></h1>
 			<input type="checkbox" id="nav-toggle" class="nav-toggle">
 			<nav>		 <!-- Website navigation section -->
 				<ul>
-					<li><a href="./index.html">Home</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Experience</a></li>
-					<li><a href="#">About Me</a></li>
+					<li><a href="./index.html" data-target="home-page" class="nav-link">Home</a></li>
+					<li><a href="#" data-target="projects-page" class="nav-link">Projects</a></li>
+					<li><a href="#" data-target="experience-page" class="nav-link">Experience</a></li>
+					<li><a href="#" data-target="about-page" class="nav-link">About Me</a></li>
 					<li><a href="./files/RTOS_intro.pdf" target="_blank">Resum&eacute;</a></li>
 				</ul>
 			</nav>
@@ -41,28 +36,33 @@
 		</header>
 
 		<main>
-			<div class="inner-content">
-				<section id="home-page" style="display: none;">
-					<div class="wrapper"> 
-						<h1 class="name">Faisal Naqaweh</h1>
-						<img src="./images/profile_pic.jpg" class="profile-pic">
-						<h1>Electrical & Computer Engineering</h1>
-					</div> 
-				</section>
-				<section id="projects-page" style="display: none;">
-					
-				</section>
-				<section id="experience-page" style="display: none;">
-					
-				</section>
-				<section id="about-page" style="display: block;">
-					<div class="wrapper">
-						<h2>About Me</h2>
-						<p class="about-blurb">Hi there! I'm Faisal. I study electrical engineering at the University of Waterloo, and have worked a few internships in the field of <strong>IT</strong> and <strong>web development</strong>. Although my work experience may not show it, I'm very excited about <strong>embedded programming</strong> and the <strong>Internet of Things.</strong></p>
-					</div>
-				</section>
-			</div>
+			<section class="page-content active" id="home-page">
+				<div class="wrapper">
+					<h1 class="name">Faisal Naqaweh</h1>
+					<img src="./images/profile_pic.jpg" class="profile-pic">
+					<h1>Electrical & Computer Engineering</h1>
+				</div>
+			</section>
+			<section class="page-content" id="projects-page">
+				<div class="wrapper">
+					<h2>Projects</h2>
+					<p>This is the projects section!</p>	
+				</div>
+			</section>
+			<section class="page-content" id="experience-page">
+				<div class="wrapper">
+					<h2>Experience</h2>
+					<p>This is the experience section!</p>
+				</div>					
+			</section>
+			<section class="page-content" id="about-page">
+				<div class="wrapper">
+					<h2>About Me</h2>
+					<p class="about-blurb">Hi there! I'm Faisal. I study electrical engineering at the University of Waterloo, and have worked a few internships in the field of <strong>IT</strong> and <strong>web development</strong>. Although my work experience may not show it, I'm very excited about <strong>embedded programming</strong> and the <strong>Internet of Things.</strong></p>	
+				</div>	
+			</section>
 		</main>
 		
+		<script type="text/javascript" src="./js/spa.js"></script>
 	</body>
 </html>
