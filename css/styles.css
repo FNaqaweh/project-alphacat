@@ -1,23 +1,23 @@
 :root {
 	--primary: #1e2134;
-	--white: rgba(255,255,255,0.85);
-	--highlighted: rgb(212,175,55);
+	--white: rgba(255, 255, 255, 0.85);
+	--highlighted: rgb(212, 175, 55);
 }
 
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 }
-
 
 body {
 	display: grid;
 	background-color: #1e2134;
-	background-image: url('../images/polygon_backgrounds/12.jpg');
+	background-image: url("../images/polygon_backgrounds/12.jpg");
 	background-repeat: no-repeat;
 	margin: 0px;
 	font-family: sans-serif;
-	font-weight: 400;	
+	font-weight: 400;
 }
 
 main {

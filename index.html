@@ -14,6 +14,7 @@
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="stylesheet" type="text/css" href="css/navbar.css">
 		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<link rel="stylesheet" type="text/css" href="css/about.css">
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,7 +32,7 @@
 					<li><a href="#">Projects</a></li>
 					<li><a href="#">Experience</a></li>
 					<li><a href="#">About Me</a></li>
-					<li><a href="../Textbooks/RTOS_intro.pdf" target="_blank">Resum&eacute;</a></li>
+					<li><a href="./files/RTOS_intro.pdf" target="_blank">Resum&eacute;</a></li>
 				</ul>
 			</nav>
 			<label for="nav-toggle" class="nav-toggle-label">
@@ -41,12 +42,24 @@
 
 		<main>
 			<div class="inner-content">
-				<section id="home-page">
+				<section id="home-page" style="display: none;">
 					<div class="wrapper"> 
-						<h1 title="Faisal Naqaweh">Faisal Naqaweh</h1>
+						<h1 class="name">Faisal Naqaweh</h1>
 						<img src="./images/profile_pic.jpg" class="profile-pic">
-						<h1 title="Profession: Electrical Engineering">Electrical Engineering</h1>
+						<h1>Electrical & Computer Engineering</h1>
 					</div> 
+				</section>
+				<section id="projects-page" style="display: none;">
+					
+				</section>
+				<section id="experience-page" style="display: none;">
+					
+				</section>
+				<section id="about-page" style="display: block;">
+					<div class="wrapper">
+						<h2>About Me</h2>
+						<p class="about-blurb">Hi there! I'm Faisal. I study electrical engineering at the University of Waterloo, and have worked a few internships in the field of <strong>IT</strong> and <strong>web development</strong>. Although my work experience may not show it, I'm very excited about <strong>embedded programming</strong> and the <strong>Internet of Things.</strong></p>
+					</div>
 				</section>
 			</div>
 		</main>

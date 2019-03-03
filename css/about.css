@@ -1,0 +1,24 @@
+main h2 {
+	color: white;
+	grid-column: 1 / -1;
+	text-align: left;
+	font-family: "Lobster";
+	font-size: 40px;
+	font-weight: 400;
+	margin-top: 40px;
+	margin-bottom: 0;
+	text-shadow: 2px 0 var(--primary);
+}
+
+p.about-blurb {
+	grid-column: 1 / -1;
+	color: white;
+	background: var(--primary);
+	padding: 20px;	
+}
+
+@media screen and (min-width: 599px) {
+	main h2 {
+		font-size: 60px;
+	}
+}
