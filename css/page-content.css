@@ -47,10 +47,20 @@ main h6 {
 	margin: 0 auto;
 }
 
+.logo-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 160px;
+}
+
 .company-logo {
 	padding: 10px;
-	max-width: 100px;
+	max-width: 250px;
 	margin: 20px auto;
+	align-self: center;
+	background-color: var(--accent);
+	border-radius: 20px;
 }
 
 .company-name {
@@ -63,12 +73,18 @@ main h6 {
 }
 
 .job-title {
-	text-align: left;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid white;
+}
+
+.job-title h4 {
 	font-weight: 300;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-bottom: 5px;
-	border-bottom: 1px solid white;
 }
 
 .language-list {
@@ -83,7 +99,7 @@ main h6 {
 
 	main h2 {
 		font-size: 60px;
-		transition: all 400ms;
+		transition: all 700ms;
 	}
 
 	h2.initial-big {
@@ -91,12 +107,17 @@ main h6 {
 	}
 
 	.content {
-		grid-column: span 6;
-		margin: 20px;
 		font-size: 20px;
 	}
 
 	.profile-pic {
 		max-width: 400px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.content {
+		grid-column: span 6;
+		margin: 20px;
 	}
 }
