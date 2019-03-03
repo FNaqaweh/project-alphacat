@@ -1,7 +1,6 @@
 main h1,
 main h2 {
 	color: white;
-	grid-column: 1 / -1;
 	font-family: "Lobster";
 	font-weight: 400;
 	margin-top: 40px;
@@ -24,21 +23,57 @@ main h2 {
 	margin-bottom: 0;
 }
 
-p {
+main h6 {
+	font-weight: 300;
+	margin: 0;
+	margin-bottom: 3px;
+	font-size: 15px;
+}
+
+.content {
 	grid-column: 1 / -1;
 	color: white;
 	background: var(--primary);
 	padding: 20px;
+	margin: 20px 0;
 	font-size: 18px;
 }
 
 .profile-pic {
-	grid-column: 1 / -1;
 	max-width: 250px;
 	width: 100%;
 	height: auto;
 	border-radius: 200px;
 	margin: 0 auto;
+}
+
+.company-logo {
+	padding: 10px;
+	max-width: 100px;
+	margin: 20px auto;
+}
+
+.company-name {
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: left;
+	font-weight: 300;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.job-title {
+	text-align: left;
+	font-weight: 300;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 5px;
+	border-bottom: 1px solid white;
+}
+
+.language-list {
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 @media screen and (min-width: 599px) {
@@ -55,7 +90,9 @@ p {
 		font-size: 100px;
 	}
 
-	p {
+	.content {
+		grid-column: span 6;
+		margin: 20px;
 		font-size: 20px;
 	}
 

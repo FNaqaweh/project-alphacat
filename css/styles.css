@@ -18,7 +18,6 @@ body {
 	display: grid;
 	background-color: #1e2134;
 	background-image: url("../images/polygon_backgrounds/12.jpg");
-	background-repeat: no-repeat;
 	margin: 0px;
 	font-family: "Work Sans", sans-serif;
 	font-weight: 300;
@@ -49,4 +48,17 @@ strong {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	justify-content: center;
+}
+
+.full {
+	grid-column: 1 / -1;
+}
+
+
+.half {
+	grid-column: span 6;
+}
+
+.quart {
+	grid-column: span 3;
 }
