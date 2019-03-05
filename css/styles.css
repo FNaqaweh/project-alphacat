@@ -52,7 +52,7 @@ strong {
 }
 
 .full {
-	grid-column: 1 / -1;
+	grid-column: 1 / -1 !important;
 }
 
 
