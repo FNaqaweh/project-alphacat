@@ -32,6 +32,14 @@ strong {
 	font-weight: 600;
 }
 
+p a {
+	color: var(--accent);
+}
+
+p a:hover {
+	color: var(--highlighted);
+}
+
 .page-content {
 	display: none;
 	max-width: 1080px;
