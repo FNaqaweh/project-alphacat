@@ -80,9 +80,14 @@ main h2 {
 	padding-bottom: 5px;
 }
 
-.language-list {
+.no-margin-list {
 	margin-top: 0;
 	margin-bottom: 0;
+}
+
+.contact-info-list {
+	margin: auto;
+	list-style-type: none;
 }
 
 @media screen and (min-width: 599px) {
@@ -99,6 +104,10 @@ main h2 {
 		font-size: 100px;
 	}
 
+	footer ul {
+		grid-column: 4 / 8;
+	}
+
 	.content {
 		font-size: 20px;
 	}
@@ -113,4 +122,5 @@ main h2 {
 		grid-column: span 6;
 		margin: 20px;
 	}
+
 }

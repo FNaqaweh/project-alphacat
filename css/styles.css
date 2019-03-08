@@ -4,6 +4,7 @@
 
 :root {
 	--primary: #1e2134;
+	--secondary: #5893b1;
 	--accent: #c1d1de;
 	--white: rgba(255, 255, 255, 0.85);
 	--highlighted: rgb(212, 175, 55);
@@ -15,6 +16,10 @@
 	box-sizing: border-box;
 }
 
+html, body {
+	min-height: 100vh;
+}
+
 body {
 	display: grid;
 	background-color: var(--primary);
@@ -24,19 +29,39 @@ body {
 	font-weight: 300;
 }
 
+.main-container {
+	min-height: 100vh;
+}
+
 main {
 	margin-top: 100px;
+	overflow: auto;
+	padding-bottom: 100px;
+}
+
+footer {
+	background-color: var(--primary);
+	color: white;
+	position: relative;
+	height: 100px;
+	margin-top: -100px;
+	width: 100%;
+	clear: both;
+}
+
+footer span {
+
 }
 
 strong {
 	font-weight: 600;
 }
 
-p a {
+a {
 	color: var(--accent);
 }
 
-p a:hover {
+a:hover {
 	color: var(--highlighted);
 }
 
@@ -68,6 +93,58 @@ p a:hover {
 	grid-column: span 6;
 }
 
-.quart {
-	grid-column: span 3;
+.third {
+	grid-column: span 4;
+}
+
+/* Footer content styling */
+
+.desktop {
+	display: none;
+	height: 100%;
+}
+
+.mobile {
+	display: grid;
+	height: 100%;
+}
+
+.disabled {
+	color: gray;
+}
+
+footer span {
+	grid-column: span 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .mobile span a {
+	text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+	.desktop {
+		display: grid;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	main {
+		padding-bottom: 50px;
+	}
+	footer {
+		height: 50px;
+		margin-top: -50px;
+	}
+
+	footer span {
+		grid-column: span 4;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
