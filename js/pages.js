@@ -24,14 +24,16 @@ const app = {
 	},
 	pageShown: function(ev) { //The function called once the page is loaded
 		let heading = ev.target.querySelector("h2");
-		heading.classList.add("initial-big");
-		setTimeout(
-			h => {
-				h.classList.remove("initial-big");
-			},
-			500,
-			heading
-		);
+		if (heading != null) { //If an h2 element exists on the page
+			heading.classList.add("initial-big");
+			setTimeout(
+				h => {
+					h.classList.remove("initial-big");
+				},
+				500,
+				heading
+			);
+		}
 		window.scrollTo(0,0); //Resets scroll bar to the top upon page landing
 		document.getElementById("nav-toggle").checked = false; //Uncheck the navbar checkbox to close the menu upon page landing
 	},
