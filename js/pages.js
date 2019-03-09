@@ -46,4 +46,8 @@ const app = {
 	}
 };
 
-document.addEventListener("DOMContentLoaded", app.init);
+// Once the page is loaded, scroll to the top and define event listeners for navigation
+document.addEventListener("DOMContentLoaded", function() {
+	window.scrollTo(0,0),
+	app.init()
+});
