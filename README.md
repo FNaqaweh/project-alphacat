@@ -1,7 +1,7 @@
 # project-alphacat
 Personal portfolio website by Faisal Naqaweh
 
-This website was made with basic HTML5, CSS, and JavaScript. Future integration with libraries is possible, however the project is just vanilla right now!
+This (currently inactive) website was made with basic HTML5, CSS, and JavaScript. Future integration with libraries is possible, however the project is just vanilla right now!
 
 Credit where credit is due. 
 
@@ -11,7 +11,7 @@ Background image:
 Inline + tab icons:
 - https://fontawesome.com/
 
-Thank you to the following YouTube channels that helped me with the creation of this site through their awesome tutorials:
+Thank you to the following YouTube channels that helped me with the creation of this site through their informative tutorials:
 
 - https://www.youtube.com/user/KepowOb
 - https://www.youtube.com/user/TheCharmefis
